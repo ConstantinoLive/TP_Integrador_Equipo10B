@@ -1,0 +1,84 @@
+/***Fuente***/
+
+@font-face {
+    font-family: Saudagar;
+    src: url("./Font/Saudagar.ttf");
+}
+
+/************/
+
+body {
+    background-color: #4a8db7;
+}
+
+footer {
+    background-color: #3B7197;
+}
+
+header {
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+    background-color: #74bde0;
+    /*overflow: hidden;*/
+}
+
+.subtitulo {
+    color: #4b4d4f;
+    padding-left: 230px;
+    margin-top: -50px;
+    z-index: 20;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.nav {
+    background-color: #2e424d
+}
+
+.nav-link {
+    color: #fcfdfe;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.menu {
+    position: relative;
+    margin-top: 30px;
+    /*z-index: -100;*/
+}
+
+.descripcion_plato {
+    font-size: 12px;
+    font-style: italic;
+}
+
+h1 {
+    font-family: Saudagar;
+    font-size: 100px;
+    color: #4b4d4f;
+    padding-left: 50px;
+    z-index: 100;
+}
+
+.plato {
+    text-align: center;
+}
+
+.plato h5 {
+    font-family: garamond, serif;
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+

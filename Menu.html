@@ -16,225 +16,437 @@
 </head>
 
 <body>
-    <h1>Menu</h1>
-    <h3>Su mesa #: </h3>
-    <div>
-        <label>Cantidad de comensales</label>
-        <input type="number" placeholder="1" style="width: 60px;">
+    <header>
+        <div class="titulo">
+            <h1>Salguero</h1>
+            <h2 class="subtitulo">- Resto -</h2>
+        </div>
+        <h2>Menú</h2>
+        <h3>Su mesa #: </h3>
+        <div>
+            <label>Cantidad de comensales</label>
+            <input type="number" placeholder="1" style="width: 60px;">
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#Entradas">Entradas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#PlatosPrincipales">Platos principales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#Postres">Postres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#Bebidas">Bebidas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#Vinos">Vinos</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container menu">
+        <div class="tab-content">
+            <div class="tab-pane container active" id="Entradas">
+                <div class="row">
+                    <div class="col plato border-end">
+                        <h5>Entradas</h5>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <div class="row">
+                                <div div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">BIANCHINO</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label class="precio">$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Burrata - Jamón crudo / Rúcula salvaje.</p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">NATALIO</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label class="precio">$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Gratén de provoleta peperonata.</p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">LANGOSTINOS EN SALSAS DE
+                                        OSTRAS</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label class="precio">$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Langostinos salteados en salsa de ostras.</p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">CARACÚ</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label class="precio">$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Tuétano en el interior de huesos, acompañado con criolla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane container fade" id="PlatosPrincipales">
+                <div class="row">
+                    <div class="col plato border-end">
+                        <h5>Platos principales</h5>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">GIUSEPINA</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Variedad de hojas verdes / TrÍo de morrones asados, crema de
+                                atún,
+                                salmón ahumado.</p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">LISTAÚ</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Salmón grillado acompañado de un fino colchón de puré de
+                                manzanas
+                                con guarnición de vegetales
+                                braseados.</p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">LOURDES</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Mix de hojas verdes / Aderezo Lourdes, queso de yogurt griego,
+                                arándanos y frutos secos .</p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">ANNITA</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Mezcla de hojas verdes, gajos a vivo de pomelo y naranja,
+                                anana,
+                                mango, aderezos cítricos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane container fade" id="Postres">
+                <div class="row">
+                    <div class="col plato border-end">
+                        <h5>Postres</h5>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">TIRAMISÚ VÉNETO</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Tiramisú con garrapiñadas de pistachos - Salsa de cacao - Salsa
+                                toffee.
+                            </p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">BROWNIE BOSTON</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Brownie con helado de americana o dulce de leche y frutos
+                                rojos.</p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">PIAMONTE</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Panacota de chocolate blanco y vino blanco -Frutos rojos -
+                                Garrapiñadas
+                                de
+                                pistacho - Moneda de
+                                chocolate.</p>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">ROMA</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                            <p class="descripcion_plato">Trio de queso y dulce para compartir (Brie, Gruyere, Gouda,
+                                Higo,
+                                Cabutia,
+                                Batata).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane container fade" id="Bebidas">
+                <div class="row">
+                    <div class="col plato border-end">
+                        <h5>Bebidas</h5>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">AGUA SIN GAS</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">AGUA CON GAS</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">LIMONADA</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">LIMONADA MENTA Y JENGIBRE</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane container fade" id="Vinos">
+                <div class="row">
+                    <div class="col plato border-end">
+                        <h5>Vinos</h5>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">AGUA SIN GAS</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">AGUA CON GAS</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">LIMONADA</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">LIMONADA MENTA Y JENGIBRE</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" placeholder="0" style="width: 60px;">
+                                </div>
+                                <div class="col-2">
+                                    <label>$----</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="pill" href="#Entradas">Entradas</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#PlatosPrincipales">Platos principales</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Postres">Postres</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Bebidas">Bebidas</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#Vinos">Vinos</a>
-        </li>
-    </ul>
-    <hr>
-    <div class="tab-content">
-        <div class="tab-pane container active" id="Entradas">
-            <h5>Entradas</h5>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">BIANCHINO</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Burrata - Jamón crudo / Rúcula salvaje.</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">NATALIO</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Gratén de provoleta peperonata.</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">LANGOSTINOS EN SALSAS DE OSTRAS</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Langostinos salteados en salsa de ostras.</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">CARACÚ</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Tuétano en el interior de huesos, acompañado con criolla.</p>
-            </div>
-        </div>
-
-        <div class="tab-pane container fade" id="PlatosPrincipales">
-            <h5>Platos principales</h5>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">GIUSEPINA</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Variedad de hojas verdes / TrÍo de morrones asados, crema de atún, salmón ahumado.</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">LISTAÚ</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Salmón grillado acompañado de un fino colchón de puré de manzanas con guarnición de vegetales
-                    braseados.</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">LOURDES</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Mix de hojas verdes / Aderezo Lourdes, queso de yogurt griego, arándanos y frutos secos .</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">ANNITA</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Mezcla de hojas verdes, gajos a vivo de pomelo y naranja, anana, mango, aderezos cítricos.</p>
-            </div>
-        </div>
-
-        <div class="tab-pane container fade" id="Postres">
-            <h5>Postres</h5>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">TIRAMISÚ VÉNETO</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Tiramisú con garrapiñadas de pistachos - Salsa de cacao - Salsa toffee.</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">BROWNIE BOSTON</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Brownie con helado de americana o dulce de leche y frutos rojos.</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">PIAMONTE</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Panacota de chocolate blanco y vino blanco -Frutos rojos - Garrapiñadas de pistacho - Moneda de
-                    chocolate.</p>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">ROMA</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-                <p>Trio de queso y dulce para compartir (Brie, Gruyere, Gouda, Higo, Cabutia, Batata).</p>
-            </div>
-        </div>
-
-        <div class="tab-pane container fade" id="Bebidas">
-            <h5>Bebidas</h5>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">AGUA SIN GAS</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">AGUA CON GAS</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">LIMONADA</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">LIMONADA MENTA Y JENGIBRE</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-
-            </div>
-        </div>
-
-        <div class="tab-pane container fade" id="Vinos">
-            <h5>Vinos</h5>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">AGUA SIN GAS</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">AGUA CON GAS</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">LIMONADA</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">LIMONADA MENTA Y JENGIBRE</label>
-                <input type="number" placeholder="0" style="width: 60px;">
-                <label>$----</label>
-
-            </div>
-        </div>
-    </div>
-
     <div class="container">
         <h5>Su orden</h5>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Orden</th>
-                    <th scope="col">Cantidad</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Plato 1</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Plato 2</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Bebida</td>
-                    <td>2</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Orden</th>
+                            <th scope="col">Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Plato 1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Plato 2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Bebida</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <textarea style="width: 600px; height:150px;" placeholder="Observaciones para el chef..."></textarea>
+            </div>
+        </div>
     </div>
-
-    <textarea style="width: 600px; height:100px;" placeholder="Observaciones para el chef..."></textarea>
     <div>
         <button data-bs-toggle="modal" data-bs-target="#orden">Ordenar</button>
         <button>Llamar al mozo</button>
@@ -312,7 +524,10 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <p>CopyRight © 2025. Todos los Derechos reservados.</p>
+        <p>Desarrollo: Constantino (Fernando Clingo)</p>
+    </footer>
 </body>
-
+<script src="Funciones_menu.js"></script>
 </html>
